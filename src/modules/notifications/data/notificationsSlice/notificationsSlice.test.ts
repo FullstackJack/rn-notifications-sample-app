@@ -1,14 +1,17 @@
 import {expect, test} from '@jest/globals';
-import reducer, {
+import {
   NotificationsState,
   addNotification,
   markAsRead,
+  notificationsReducer,
   showNewNotifications,
 } from './notificationsSlice';
 import {initialState} from '../initialState';
 
 test('should return the initial state', () => {
-  expect(reducer(undefined, {type: undefined})).toEqual(initialState);
+  expect(notificationsReducer(undefined, {type: undefined})).toEqual(
+    initialState,
+  );
 });
 
 test('should mark a notification as read', () => {
@@ -56,7 +59,7 @@ test('should mark a notification as read', () => {
   } as NotificationsState;
 
   expect(
-    reducer(
+    notificationsReducer(
       previousState,
       markAsRead({
         id: 'n1',
@@ -133,7 +136,7 @@ test('should add new notifications and count them up', () => {
   } as NotificationsState;
 
   expect(
-    reducer(
+    notificationsReducer(
       previousState,
       addNotification({
         notification: {
@@ -246,7 +249,7 @@ test('should merge new notifications with old notifications', () => {
     newNotificationsCount: 1,
   } as NotificationsState;
 
-  expect(reducer(previousState, showNewNotifications())).toEqual({
+  expect(notificationsReducer(previousState, showNewNotifications())).toEqual({
     notifications: {
       n0: {
         id: 'n0',

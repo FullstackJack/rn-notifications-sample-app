@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';
 
 // As a basic setup, import your same slice reducers
 import {AppStore, RootState} from '../../app/data/store';
-import notificationsSlice from '../../modules/notifications/data/notificationsSlice';
+import {notificationsReducer} from '../../modules/notifications/data/notificationsSlice';
 
 // This type interface extends the default options for render from RTL, as well
 // as allows the user to specify other things such as initialState, store.
@@ -22,7 +22,7 @@ export function renderWithProviders(
     preloadedState = {} as RootState,
     // Automatically create a store instance if no store was passed in
     store = configureStore({
-      reducer: {notifications: notificationsSlice},
+      reducer: {notifications: notificationsReducer},
       preloadedState,
     }),
     ...renderOptions

@@ -81,7 +81,7 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      1 hour ago
+      11 months
     </Text>
     <View
       accessibilityState={
