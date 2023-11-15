@@ -90,6 +90,8 @@ Originally, I had devised an implementation whereby new notifications appeared w
 
 Despite the name, "VirtualizedList", the underlying implementation in FlatList and SectionList, can still have poor performance when the list is large. I solved around this issue by making use of React's `memo` to memoize the list items and only render/rerender items that have changed. For instance, when a read flag is updated, rather than triggering a whole list rerender, `memo` only let's the parent update the single item that changed.
 
+Further complicating the logic, timeago should needs to be re-rendered periodically. One way to make this work is to unmount the notifications screen on blur and rerender items on next view. Another techique is to add the timeago to the props of the memoization which favors rerendering of more recent items. If we had hundreds of recent items though, this could become a rendering bottleneck and would need to be tuned.
+
 # What TODO Next
 
 1. Push Notifications - Notifications should be deeply integrated with push notifications so they can be received when the app is backgrounded, inactive, or foregrounded. When a user opens a push notification, it should mark it as read, even if the action takes the user to a deep-linked screen.
