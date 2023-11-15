@@ -8,12 +8,12 @@ import {OutlineButton} from '../../../../common/ui/OutlineButton';
 import {markAsRead} from '../../data/notificationsSlice';
 import {ACTION_FRIEND_REQUEST} from '../../data/constants';
 
-interface INotificationViewProps extends INotification {
+interface INotificationItemProps extends INotification {
   timeago: string;
 }
 
 const NotificationItem = memo(function NotificationItem(
-  props: INotificationViewProps,
+  props: INotificationItemProps,
 ) {
   const {action, isRead, id: notificationId, timeago} = props;
   const dispatch = useDispatch();
