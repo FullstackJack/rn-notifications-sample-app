@@ -86,11 +86,11 @@ The nofifications are designed to be updated in the UI when a user presses the "
 
 Originally, I had devised an implementation whereby new notifications appeared when a user was scrolled to the top, similar to a reversed direction chat application, but this was not optimal and caused unintentional layout shifts while interacting with notification items. It became obvious that I needed to switch to a deliberate user action in order to trigger viewing the hidden notifications (merging a hidden list of recieved notifications with the visible ones). That change also necessitated the use of a _new notifications count_ to display the number hidden notifications waiting for the user to engage with.
 
-## List Re-rendering
+## List Re-rendering and Timeago
 
 Despite the name, "VirtualizedList", the underlying implementation in FlatList and SectionList, can still have poor performance when the list is large. I solved around this issue by making use of React's `memo` to memoize the list items and only render/rerender items that have changed. For instance, when a read flag is updated, rather than triggering a whole list rerender, `memo` only let's the parent update the single item that changed.
 
-Further complicating the logic, timeago should needs to be re-rendered periodically. One way to make this work is to unmount the notifications screen on blur and rerender items on next view. Another techique is to add the timeago to the props of the memoization which favors rerendering of more recent items. If we had hundreds of recent items though, this could become a rendering bottleneck and would need to be tuned.
+Further complicating the list render logic, timeago needs to be re-rendered periodically. One way to make this work is to unmount the notifications screen on blur and rerender items on next view. Another technique is to add the timeago to the props of the memoization which favors re-rendering of more recent items. If we had hundreds of recent items though, this could become a rendering bottleneck and would need to be tuned. Unfortunately, once I moved timeago as a prop on NotificationItem, it added a slight lag on rendering larger lists. I plan to optimize this in the future with a more advanced algorithm and possible caching of list ordering calculations. Part of that effort would require debugging using flame charts and perf monitors.
 
 # What TODO Next
 
