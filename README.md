@@ -20,6 +20,12 @@ Unit Tests are written with TypeScript and Jest. You can run them with `yarn tes
 
 Application state is being managed by Redux, a robust and battle-tested immutability architecture for reactive app state updates. This application makes use state slicing for feature development (i.e. notifications, profile, messages, etc.).
 
+# Contributing
+
+## Conventional Commits
+
+This repo proudly uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to `git` stuff done. Please use them as it will aid in automated versioning, changelog generation and releases building. Thank you!
+
 # Getting Started
 
 > **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
@@ -106,3 +112,4 @@ Further complicating the list render logic, timeago needs to be re-rendered peri
 10. UI States - All screens should have the complete set of UI states (empty state, partial state/loading state, perfect state, error state)
 11. Deep linking - Push notifiations should be deep linkable into various screens to take the user directly to content such as a message or a friend request.
 12. More tests - Test coverage is not as high as I like and I have not covered all branches well enough, this is primarily due to time.
+13. Automated releases, versioning and changelog with Conventional Commits.
