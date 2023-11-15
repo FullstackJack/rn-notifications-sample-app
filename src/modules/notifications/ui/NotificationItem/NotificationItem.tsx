@@ -1,7 +1,6 @@
 import React, {memo} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {useDispatch} from 'react-redux';
-import {formatDistance} from 'date-fns';
 import {INotification} from '../../types';
 import {NotificationText} from '../NotificationText';
 import {FlatButton} from '../../../../common/ui/FlatButton';
@@ -9,19 +8,17 @@ import {OutlineButton} from '../../../../common/ui/OutlineButton';
 import {markAsRead} from '../../data/notificationsSlice';
 import {ACTION_FRIEND_REQUEST} from '../../data/constants';
 
-interface INotificationViewProps extends INotification {}
+interface INotificationViewProps extends INotification {
+  timeago: string;
+}
 
 const NotificationItem = memo(function NotificationItem(
   props: INotificationViewProps,
 ) {
-  const {action, isRead, id: notificationId} = props;
+  const {action, isRead, id: notificationId, timeago} = props;
   const dispatch = useDispatch();
   const markReadAction = (id: string) => () => dispatch(markAsRead({id}));
   const opacity = isRead ? 0.5 : 1;
-  const timeago = formatDistance(
-    Date.now() - new Date().getTimezoneOffset() * 60000,
-    props.createdAt,
-  );
 
   return (
     <View style={styles.container}>

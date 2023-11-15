@@ -5,6 +5,7 @@ import {NotificationItem} from '../../ui';
 import {RootState} from '../../../../app/data/store';
 import convertStateToSections from '../../helpers/convertStateToSections';
 import ViewMoreOverlay from '../../ui/ViewMoreOverlay/ViewMoreOverlay';
+import {formatDistance} from 'date-fns';
 
 export default function NotificationsScreen() {
   const scrollRef: React.RefObject<SectionList> = useRef(null);
@@ -21,7 +22,13 @@ export default function NotificationsScreen() {
         initialNumToRender={10}
         sections={sections}
         keyExtractor={item => item.id}
-        renderItem={({item}) => <NotificationItem {...item} />}
+        renderItem={({item}) => {
+          const timeago = formatDistance(
+            Date.now() - new Date().getTimezoneOffset() * 60000,
+            item.createdAt,
+          );
+          return <NotificationItem {...item} timeago={timeago} />;
+        }}
         renderSectionHeader={({section: {title}}) => (
           <Text style={styles.header}>{title}</Text>
         )}
