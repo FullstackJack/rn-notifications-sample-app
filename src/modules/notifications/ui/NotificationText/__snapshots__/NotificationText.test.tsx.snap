@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "backgroundColor": "#39465a",
+        "color": "white",
+        "padding": 2,
+      }
+    }
+  >
+    @
+    Vinny
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#eee",
+        "padding": 2,
+      }
+    }
+  >
+     mentioned you in
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#eee",
+        "padding": 2,
+      }
+    }
+  >
+    #
+    Client
+    .
+    Root
+  </Text>
+</View>
+`;

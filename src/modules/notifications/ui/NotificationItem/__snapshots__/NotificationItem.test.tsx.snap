@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#273246",
+      "columnGap": 10,
+      "flexDirection": "row",
+      "paddingHorizontal": 8,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "purple",
+        "borderRadius": 8,
+        "height": 35,
+        "width": 35,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "opacity": 1,
+        "rowGap": 4,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "backgroundColor": "#39465a",
+            "color": "white",
+            "padding": 2,
+          }
+        }
+      >
+        @
+        Vinny
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#eee",
+            "padding": 2,
+          }
+        }
+      >
+         mentioned you in
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#eee",
+            "padding": 2,
+          }
+        }
+      >
+        #
+        Client
+        .
+        Root
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ccc",
+        }
+      }
+    >
+      1 hour ago
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 50,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+            "width": "auto",
+          },
+          undefined,
+          {
+            "backgroundColor": "white",
+          },
+        ]
+      }
+    >
+      <Text>
+        Mark Read
+      </Text>
+    </View>
+  </View>
+</View>
+`;

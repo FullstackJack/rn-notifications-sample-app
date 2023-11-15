@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.5)",
+      "bottom": 0,
+      "height": 50,
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "white",
+          "borderColor": "transparent",
+          "borderRadius": 50,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "width": "auto",
+        },
+        {
+          "alignSelf": "center",
+          "backgroundColor": "#993333",
+        },
+        {
+          "backgroundColor": "#993333",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+        }
+      }
+    >
+      10 New Notifications
+    </Text>
+  </View>
+</View>
+`;
