@@ -18,15 +18,17 @@ const NotificationItem = memo(function NotificationItem(
   const dispatch = useDispatch();
   const markReadAction = (id: string) => () => dispatch(markAsRead({id}));
   const opacity = isRead ? 0.5 : 1;
+  const timeago = formatDistance(
+    Date.now() - new Date().getTimezoneOffset() * 60000,
+    props.createdAt,
+  );
 
   return (
     <View style={styles.container}>
       <View style={styles.avatar} />
       <View style={{...styles.content, opacity}}>
         <NotificationText {...props} />
-        <Text style={styles.timeago}>
-          {formatDistance(Date.now(), props.createdAt)}
-        </Text>
+        <Text style={styles.timeago}>{timeago}</Text>
         {!isRead &&
           (action === ACTION_FRIEND_REQUEST ? (
             <View style={styles.buttonGroup}>
