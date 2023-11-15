@@ -1,6 +1,6 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
-import {INotification} from '../types';
-import {initialState} from './initialState';
+import {INotification} from '../../types';
+import {initialState} from '../initialState';
 
 export interface NotificationsState {
   notifications: Record<string, INotification>;
@@ -39,4 +39,4 @@ export const notificationsSlice = createSlice({
 export const {markAsRead, addNotification, showNewNotifications} =
   notificationsSlice.actions;
 
-export default notificationsSlice.reducer;
+export const notificationsReducer = notificationsSlice.reducer;

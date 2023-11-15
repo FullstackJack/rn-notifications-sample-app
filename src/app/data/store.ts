@@ -3,11 +3,11 @@ import {
   combineReducers,
   configureStore,
 } from '@reduxjs/toolkit';
-import notifications from '../../modules/notifications/data/notificationsSlice';
+import {notificationsReducer} from '../../modules/notifications/data/notificationsSlice';
 
 // Create the root reducer independently to obtain the RootState type
 const rootReducer = combineReducers({
-  notifications,
+  notifications: notificationsReducer,
 });
 
 export const store = configureStore({
@@ -16,7 +16,7 @@ export const store = configureStore({
 
 export function setupStore(preloadedState?: PreloadedState<RootState>) {
   return configureStore({
-    reducer: {notifications},
+    reducer: {notifications: notificationsReducer},
     preloadedState,
   });
 }

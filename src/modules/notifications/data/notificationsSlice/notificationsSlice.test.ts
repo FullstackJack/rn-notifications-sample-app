@@ -5,7 +5,7 @@ import reducer, {
   markAsRead,
   showNewNotifications,
 } from './notificationsSlice';
-import {initialState} from './initialState';
+import {initialState} from '../initialState';
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {type: undefined})).toEqual(initialState);

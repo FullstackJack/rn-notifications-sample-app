@@ -103,3 +103,4 @@ Despite the name, "VirtualizedList", the underlying implementation in FlatList a
 9. Networking detection (Offline mode) - The app should work in offline mode
 10. UI States - All screens should have the complete set of UI states (empty state, partial state/loading state, perfect state, error state)
 11. Deep linking - Push notifiations should be deep linkable into various screens to take the user directly to content such as a message or a friend request.
+12. More tests - Test coverage is not as high as I like and I have not covered all branches well enough, this is primarily due to time.

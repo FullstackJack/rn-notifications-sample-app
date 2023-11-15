@@ -1,11 +1,12 @@
 import React, {memo} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {useDispatch} from 'react-redux';
+import {formatDistance} from 'date-fns';
 import {INotification} from '../../types';
 import {NotificationText} from '../NotificationText';
 import {FlatButton} from '../../../../common/ui/FlatButton';
 import {OutlineButton} from '../../../../common/ui/OutlineButton';
 import {markAsRead} from '../../data/notificationsSlice';
-import {useDispatch} from 'react-redux';
 import {ACTION_FRIEND_REQUEST} from '../../data/constants';
 
 interface INotificationViewProps extends INotification {}
@@ -23,7 +24,9 @@ const NotificationItem = memo(function NotificationItem(
       <View style={styles.avatar} />
       <View style={{...styles.content, opacity}}>
         <NotificationText {...props} />
-        <Text style={styles.timeago}>1 hour ago</Text>
+        <Text style={styles.timeago}>
+          {formatDistance(Date.now(), props.createdAt)}
+        </Text>
         {!isRead &&
           (action === ACTION_FRIEND_REQUEST ? (
             <View style={styles.buttonGroup}>
