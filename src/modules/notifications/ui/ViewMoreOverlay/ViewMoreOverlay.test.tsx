@@ -1,6 +1,6 @@
 import React from 'react';
-import {expect, test} from '@jest/globals';
-import {screen} from '@testing-library/react-native';
+import {jest, expect, test} from '@jest/globals';
+import {fireEvent, screen} from '@testing-library/react-native';
 import {renderWithProviders} from '../../../../common/utils/test-utils';
 import ViewMoreOverlay from './ViewMoreOverlay';
 import {NotificationsState} from '../../data/notificationsSlice';
@@ -17,4 +17,17 @@ test('renders correctly', async () => {
   );
 
   expect(screen.toJSON()).toMatchSnapshot();
+});
+
+test('calls onViewMorePress', async () => {
+  const onPressMock = jest.fn();
+  renderWithProviders(<ViewMoreOverlay onViewMorePress={onPressMock} />, {
+    preloadedState: {
+      notifications: {newNotificationsCount: 10} as NotificationsState,
+    },
+  });
+
+  fireEvent.press(screen.getByText('10 New Notifications'));
+
+  expect(onPressMock).toHaveBeenCalled();
 });

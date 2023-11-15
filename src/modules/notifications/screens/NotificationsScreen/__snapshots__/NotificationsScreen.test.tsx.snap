@@ -1,0 +1,1128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      [
+        {
+          "data": [
+            {
+              "action": "friend_request",
+              "createdAt": 1699951353176,
+              "id": "n6",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Matt",
+              },
+            },
+          ],
+          "title": "yesterday",
+        },
+        {
+          "data": [
+            {
+              "action": "mention",
+              "channel": {
+                "id": "ch123",
+                "name": "General",
+              },
+              "community": {
+                "id": "c123",
+                "name": "Root",
+              },
+              "createdAt": 1699873227983,
+              "id": "n1",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Jesse",
+              },
+            },
+            {
+              "action": "mention",
+              "channel": {
+                "id": "ch123",
+                "name": "Client",
+              },
+              "community": {
+                "id": "c123",
+                "name": "Root",
+              },
+              "createdAt": 1699873010725,
+              "id": "n0",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Vinny",
+              },
+            },
+            {
+              "action": "mention",
+              "channel": {
+                "id": "ch123",
+                "name": "Infrastructure",
+              },
+              "community": {
+                "id": "c123",
+                "name": "Root",
+              },
+              "createdAt": 1699860432773,
+              "id": "n2",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Vinny",
+              },
+            },
+            {
+              "action": "friend_request_declined",
+              "createdAt": 1699860432773,
+              "id": "n3",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Mark",
+              },
+            },
+            {
+              "action": "friend_request_accepted",
+              "createdAt": 1699860432773,
+              "id": "n4",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Jesse",
+              },
+            },
+          ],
+          "title": "11/13/2023",
+        },
+        {
+          "data": [
+            {
+              "action": "friend_request",
+              "createdAt": 1699801790151,
+              "id": "n5",
+              "isRead": false,
+              "user": {
+                "id": "u123",
+                "name": "Vinny",
+              },
+            },
+          ],
+          "title": "11/12/2023",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontSize": 16,
+              "paddingLeft": 8,
+              "paddingVertical": 4,
+              "textTransform": "capitalize",
+            }
+          }
+        >
+          yesterday
+        </Text>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Matt
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 sent you a friend request
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              1 day
+            </Text>
+            <View
+              style={
+                {
+                  "columnGap": 8,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
+                      "backgroundColor": "white",
+                      "borderColor": "transparent",
+                      "borderRadius": 50,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "justifyContent": "center",
+                      "paddingHorizontal": 16,
+                      "paddingVertical": 8,
+                      "width": "auto",
+                    },
+                    undefined,
+                    {
+                      "backgroundColor": "white",
+                    },
+                  ]
+                }
+                testID="accept-button"
+              >
+                <Text>
+                  Accept
+                </Text>
+              </View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "alignSelf": "flex-start",
+                      "backgroundColor": "white",
+                      "borderColor": "transparent",
+                      "borderRadius": 50,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "justifyContent": "center",
+                      "paddingHorizontal": 16,
+                      "paddingVertical": 8,
+                      "width": "auto",
+                    },
+                    {
+                      "backgroundColor": "transparent",
+                      "borderColor": "white",
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                    },
+                    {
+                      "backgroundColor": "transparent",
+                    },
+                  ]
+                }
+                testID="decline-button"
+              >
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                    }
+                  }
+                >
+                  Decline
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontSize": 16,
+              "paddingLeft": 8,
+              "paddingVertical": 4,
+              "textTransform": "capitalize",
+            }
+          }
+        >
+          11/13/2023
+        </Text>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Jesse
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 mentioned you in
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                #
+                General
+                .
+                Root
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              2 days
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "white",
+                    "borderColor": "transparent",
+                    "borderRadius": 50,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                    "width": "auto",
+                  },
+                  undefined,
+                  {
+                    "backgroundColor": "white",
+                  },
+                ]
+              }
+            >
+              <Text>
+                Mark Read
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Vinny
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 mentioned you in
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                #
+                Client
+                .
+                Root
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              2 days
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "white",
+                    "borderColor": "transparent",
+                    "borderRadius": 50,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                    "width": "auto",
+                  },
+                  undefined,
+                  {
+                    "backgroundColor": "white",
+                  },
+                ]
+              }
+            >
+              <Text>
+                Mark Read
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Vinny
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 mentioned you in
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                #
+                Infrastructure
+                .
+                Root
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              2 days
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "white",
+                    "borderColor": "transparent",
+                    "borderRadius": 50,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                    "width": "auto",
+                  },
+                  undefined,
+                  {
+                    "backgroundColor": "white",
+                  },
+                ]
+              }
+            >
+              <Text>
+                Mark Read
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <Text>
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Mark
+              </Text>
+               
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 
+                <Text
+                  style={
+                    {
+                      "color": "red",
+                    }
+                  }
+                >
+                  declined
+                </Text>
+                 your friend request
+              </Text>
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              2 days
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "white",
+                    "borderColor": "transparent",
+                    "borderRadius": 50,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                    "width": "auto",
+                  },
+                  undefined,
+                  {
+                    "backgroundColor": "white",
+                  },
+                ]
+              }
+            >
+              <Text>
+                Mark Read
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#273246",
+              "columnGap": 10,
+              "flexDirection": "row",
+              "paddingHorizontal": 8,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "purple",
+                "borderRadius": 8,
+                "height": 35,
+                "width": 35,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "opacity": 1,
+                "rowGap": 4,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#39465a",
+                    "color": "white",
+                    "padding": 2,
+                  }
+                }
+              >
+                @
+                Jesse
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#eee",
+                    "padding": 2,
+                  }
+                }
+              >
+                 
+                <Text
+                  style={
+                    {
+                      "color": "green",
+                    }
+                  }
+                >
+                  accepted
+                </Text>
+                 your friend request
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ccc",
+                }
+              }
+            >
+              2 days
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "white",
+                    "borderColor": "transparent",
+                    "borderRadius": 50,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                    "width": "auto",
+                  },
+                  undefined,
+                  {
+                    "backgroundColor": "white",
+                  },
+                ]
+              }
+            >
+              <Text>
+                Mark Read
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        style={
+          {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
