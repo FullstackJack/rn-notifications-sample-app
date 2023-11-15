@@ -14,12 +14,14 @@ import {Provider} from 'react-redux';
 import {store} from './data/store';
 import MockNotificationSystem from '../modules/notifications/data/MockNotificationSystem';
 import {CustomTheme} from './data/constants';
+import {StatusBar} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 function App(): JSX.Element {
   return (
     <Provider store={store}>
+      <StatusBar barStyle="light-content" />
       <MockNotificationSystem />
       <NavigationContainer theme={CustomTheme}>
         <Tab.Navigator>
