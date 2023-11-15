@@ -34,6 +34,15 @@ This repo proudly uses [Conventional Commits](https://www.conventionalcommits.or
 
 To run the application locally, use the below mentioned commands.
 
+```bash
+
+# using npm
+npm install
+
+# OR using yarn
+yarn install
+```
+
 ### For Android
 
 ```bash
