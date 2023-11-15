@@ -24,7 +24,11 @@ function App(): JSX.Element {
       <NavigationContainer theme={CustomTheme}>
         <Tab.Navigator>
           <Tab.Screen name="Messages" component={MessagesScreen} />
-          <Tab.Screen name="Notifications" component={NotificationsScreen} />
+          <Tab.Screen
+            name="Notifications"
+            component={NotificationsScreen}
+            options={{unmountOnBlur: true}}
+          />
         </Tab.Navigator>
       </NavigationContainer>
     </Provider>
