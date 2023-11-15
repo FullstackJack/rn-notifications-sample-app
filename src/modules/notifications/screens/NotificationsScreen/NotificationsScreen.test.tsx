@@ -1,3 +1,4 @@
+import React from 'react';
 import {test, expect} from '@jest/globals';
 import {renderWithProviders} from '../../../../common/utils/test-utils';
 import NotificationsScreen from './NotificationsScreen';
